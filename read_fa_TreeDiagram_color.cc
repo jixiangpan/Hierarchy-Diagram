@@ -139,7 +139,7 @@ void Loop_func(set<int> set_root_trk, map<int,vector<int> > *map_trk_daughters, 
 //////////////////////////// MAIN ///////////////////////////////////
 /////////////////////////////////////////////////////////////////////
 
-void read_fa_TreeDiagram(int outflag, int file_bgn, int file_end)
+void read_fa_TreeDiagram_color(int outflag, int file_bgn, int file_end)
 {
   cout<<endl<<" Hello, World!"<<endl<<endl;
   
@@ -245,7 +245,7 @@ void read_fa_TreeDiagram(int outflag, int file_bgn, int file_end)
     
     if( nu_PdgCode!=used_nu ) continue;
     if( nu_CCNC!=0 ) continue;// CC-0, NC-1
-    if( gt_Gscatter!=4 ) continue;
+    if( gt_Gscatter!=1 ) continue;
     
     flag_find_interaction = true;
       
